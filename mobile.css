@@ -1,3 +1,7 @@
+/*------------
+Config init 
+--------------*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,7 +13,6 @@ html {
 }
 
 :root {
-  /* Color pallete */
   --white: #ffffff;
   --black: #000000;
   --very-light-pink: #c7c7c7;
@@ -25,9 +28,51 @@ html {
 Mobile design 
 --------------*/
 
-body, [type="submit"] {
+body,
+[type="submit"] {
   font-family: "Quicksand", sans-serif;
   background-color: var(--white);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--text-input-field);
+  padding: 8px 8px;
+  height: 7vh;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  width: 84px;
+}
+
+.logo{
+  width: 160px;
+}
+
+.main {
+  width: 100%;
+  min-height: 93vh;
+  display: grid;
+  place-items: center;
+}
+
+.general-container {
+  width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .primary-button {
@@ -48,13 +93,12 @@ body, [type="submit"] {
 }
 
 .primary-button:active {
-  background-color: var(--hospital-pink);
   transition: 0s;
-  border: 2px solid var(--hospital-pink-hover);
+  border: 3px solid var(--hospital-pink);
 }
 
 .secundary-button {
-  margin: 40px 4px 0 4px;
+  margin: 0px 4px 0 4px;
   border-radius: 8px;
   height: 60px;
   background-color: var(--white);
@@ -63,6 +107,18 @@ body, [type="submit"] {
   color: var(--hospital-pink);
   border: 1.6px solid var(--hospital-pink);
   cursor: pointer;
+  width: 100%;
+}
+
+.secundary-button:hover {
+  border-color: var(--hospital-pink-hover);
+  color: var(--hospital-pink-hover);
+  transition: 0.6s;
+}
+
+.secundary-button:active {
+  border-color: var(--hospital-pink);
+  transition: 0s;
 }
 
 .title {
@@ -76,6 +132,17 @@ body, [type="submit"] {
   color: gray;
 }
 
+.hint {
+  margin-top: 20px;
+  font-size: var(--sm);
+}
+
+.hint a {
+  text-decoration: none;
+  color: var(--hospital-pink);
+  font-weight: 700;
+}
+
 .label {
   margin: 12px 0 4px 0;
   text-align: left;
@@ -83,7 +150,7 @@ body, [type="submit"] {
   font-weight: 700;
 }
 
-.input-password {
+.input {
   margin: 6px 4px;
   height: 40px;
   background-color: var(--text-input-field);
