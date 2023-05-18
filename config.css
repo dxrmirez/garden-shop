@@ -53,6 +53,18 @@ body, [type="submit"] {
   border: 2px solid var(--hospital-pink-hover);
 }
 
+.secundary-button {
+  margin: 40px 4px 0 4px;
+  border-radius: 8px;
+  height: 60px;
+  background-color: var(--white);
+  font-size: var(--md);
+  font-weight: 700;
+  color: var(--hospital-pink);
+  border: 1.6px solid var(--hospital-pink);
+  cursor: pointer;
+}
+
 .title {
   font-size: var(--lg);
   margin-bottom: 4px;
