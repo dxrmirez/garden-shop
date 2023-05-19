@@ -24,15 +24,16 @@ html {
   --lg: 20px;
 }
 
-/*------------
-Mobile design 
---------------*/
-
 body,
-[type="submit"] {
+[type="submit"],
+input,
+select {
   font-family: "Quicksand", sans-serif;
   background-color: var(--white);
 }
+/*------------
+Mobile design 
+--------------*/
 
 .header {
   display: flex;
@@ -51,7 +52,7 @@ body,
   width: 84px;
 }
 
-.logo{
+.logo {
   width: 160px;
 }
 
@@ -157,4 +158,146 @@ body,
   border: 0;
   border-radius: 8px;
   padding: 0 8px;
+}
+.categories {
+  margin-bottom: 20px;
+}
+.categories ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.categories ul::-webkit-scrollbar {
+  display: none;
+}
+
+.categories li {
+  color: var(--very-light-pink);
+  line-height: 32px;
+}
+
+.categories label {
+  font-size: var(--sm);
+  cursor: pointer;
+  font-weight: 700;
+  padding: 4px 10px;
+}
+
+.categories [type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  border-radius: 8px;
+  background-color: var(--hospital-pink-hover);
+  color: var(--white);
+  transition: 0.6s background, 0.6s color;
+}
+
+
+.order-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.order-select {
+  font-weight: 700;
+  color: var(--very-light-pink);
+  font-family: 'Quicksand', sans-serif;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: var(--text-input-field);
+}
+
+.order-select option {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 140px);
+  justify-content: space-around;
+}
+
+.search-prod {
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-box {
+  padding-left: 40px;
+}
+
+.search-icon {
+  height: 17px;
+  width: 17px;
+  position: relative;
+  bottom: 35px;
+  left: 12px;
+}
+
+.cards {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.cards > img {
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+  object-fit: cover;
+  cursor: pointer;
+  box-shadow: 12px 0px 3px -8px rgba(0, 0, 0, 0.1);
+}
+
+.cards > img:hover {
+  border: 2px solid var(--very-light-pink);
+}
+
+.cards > img:active {
+  filter: contrast(1.15);
+}
+
+.info-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.info-card > figure {
+  scale: 0.75;
+  cursor: pointer;
+}
+
+.info-card > figure:hover {
+  filter: contrast(0.9);
+  transition: 0.3s;
+}
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.text-card .title {
+  font-size: var(--md);
+  margin: 0;
+}
+
+.text-card .subtitle {
+  font-size: var(--sm);
 }

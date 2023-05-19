@@ -10,6 +10,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mobile.css">
+    <style>
+        .main {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 12px 0;
+        }
+
+        .info-card>figure {
+            display: none;
+        }
+        .hint {
+            font-weight: 700;
+            margin: 0;
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,12 +36,190 @@
         <a href="login.html"><img src="./icons/user.svg" alt="user"></a>
     </header>
     <main class="main">
-        <div style="display:flex; flex-direction: column;">
-            <a href="new-password.html">New password</a>
-            <a href="email-sent.html">Email send</a>
-            <a href="menu-loged.html">Menu Loged</a>
-            <a href="create-account.html">Create an account</a>
-        </div>
+        <section class="general-container search-prod">
+            <div class="search-container">
+                <input type="search" class="input search-box">
+                <img src="icons/lens.svg" alt="lens" class="search-icon">
+            </div>
+            <nav class="categories">
+                <ul>
+                    <li>
+                        <input type="radio" id="all" name="cat" checked>
+                        <label for="all">All</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="indoor" name="cat">
+                        <label for="indoor">Indoor</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="outdoor" name="cat">
+                        <label for="outdoor">Outdoor</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="edible" name="cat">
+                        <label for="edible">Edible Plants</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="garden" name="cat">
+                        <label for="garden">Garden Accessories</label>
+                    </li>
+                </ul>
+            </nav>
+            <div class="order-container">
+                <p class="hint">Order:</p>
+                <select class="order-select">
+                    <option value="recent">Most recent</option>
+                    <option value="popular">Most popular</option>
+                    <option value="cost">Low cost</option>
+                </select>
+            </div>
+        </section>
+        <section class="general-container products">
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1410c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Liriope</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1414c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Oreganon</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1418c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Isora</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1428c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Monedita de Oro</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1433c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Hoja de Marmol</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1425c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Orejita de Ratón</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1385c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Helecho</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1387c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Peperonia</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1390c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Singonio</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1392c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Frescura</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1395c.jpg" alt=""
+                    class="img-card">
+                <div class="info-card">
+                    <div class="text-card">
+                        <p class="title">$20,00</p>
+                        <p class="subtitle">Paleta de Pintor</p>
+                    </div>
+                    <figure>
+                        <img src="icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
     </main>
 </body>
 
