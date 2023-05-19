@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width" />
-    <title>Home - Garden Sale</title>
+    <title>Password recovery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" />
@@ -46,17 +46,14 @@
     <main class="main">
         <div class="general-container">
             <div><img src="./icons/logo.png" alt="logo" class="logo"/></div>
-            <h1 class="title">Email has been sent!</h1>
-            <p class="subtitle">Please check your inbox for instructions on how to finish the process.</p>
-            <div style="display: flex; justify-content: center;">
-                <div class="bck-image">
-                    <img src="./icons/email.svg" alt="send">
-                </div>
-            </div>
-            <a href="login.html" style="width: 100%">
-                <button class="primary-button login-button">Continue</button>
-            </a>
-            <p class="hint">Didn't receive the email? <a href="email-send.html">Resend</a></p>
+            <h1 class="title">Password recovery</h1>
+            <p class="subtitle">Inform the email address used to create your account!</p>
+            <form action="email-sent.html" class="form">
+                <label for="email" class="label">Email address</label>
+                <input type="email" id="email" class="input input-password" placeholder="name@domain.com" required/>
+                <input type="submit" class="primary-button" value="Submit" />
+            </form>
+            <p class="hint"><a href="login.html">Back</a></p>
         </div>
     </main>
 </body>
