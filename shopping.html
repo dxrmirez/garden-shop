@@ -13,7 +13,9 @@
     <style>
         .header p {
             width: 100%;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 0;
         }
 
@@ -52,10 +54,12 @@
             grid-template-rows: repeat(auto-fill, 100px);
             height: 100%;
             align-items: start;
+            grid-row-gap: 20px;
         }
 
         .shop-cards {
             display: flex;
+            margin-bottom: 20px;
         }
 
         .shop-cant {
@@ -94,9 +98,10 @@
 
         .img-card {
             width: 100px;
-height: 100px;
+            height: 100px;
             object-fit: cover;
             border-radius: 20px;
+            border: 2px solid black;
         }
     </style>
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 480px)">
@@ -104,8 +109,8 @@ height: 100px;
 
 <body>
     <header class="header">
-        <a href="menu-loged.html"><img src="./icons/icon_menu.svg" alt="menu"></a>
         <p class="title">Shopping cart</p>
+        <a href="loged.html"><img src="./icons/cross.svg" alt="exit"></a>
     </header>
     <main class="main">
         <div class="general-container">
@@ -139,11 +144,11 @@ height: 100px;
                     </div>
                 </div>
                 <div class="shop-cards">
-                    <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1433c.jpg" alt="marmol"
+                    <img src="https://payload.cargocollective.com/1/10/342753/6242477/_TAI1390c.jpg" alt="marmol"
                         class="img-card">
                     <div class="shop-info">
                         <div class="shop-cant">
-                            <p class="subtitle">Hoja de Marmol</p>
+                            <p class="subtitle">Singonio</p>
                             <p class="hint">Cant: 12</p>
                         </div>
                         <div class="shop-price">
@@ -171,7 +176,7 @@ height: 100px;
             <div class="total-check">
                 <div class="total">
                     <p class="subtitle">Total</p>
-                    <p class="subtitle">$500,00</p>
+                    <p class="subtitle">$520,00</p>
                 </div>
                 <button class="primary-button">Checkout</button>
             </div>
