@@ -6,6 +6,13 @@
   padding: 0;
 }
 
+
+:root {
+  --sm: 14px;
+  --md: 16px;
+  --lg: 20px;
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -24,7 +31,6 @@ body{
 .main{
   display: flex;
   flex-grow: 1;
-  background-color: rgb(242, 191, 186);
   align-items: center;
 }
 
@@ -37,6 +43,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   flex: 0 0 10vw;
+  justify-content: flex-start;
 }
 .cards{
   display: flex;
@@ -51,8 +58,13 @@ body{
   flex: 0 0 400px;
   width: 400px;
 }
-.info-card{
-  font-size: 100vw;
+
+.info-card .tittle  {
+  font-size: var(--lg);
+}
+
+.text-card .title{
+  font-size: var(--lg);
 }
 
 footer{
