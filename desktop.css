@@ -1,3 +1,81 @@
-.logo {
-  display: none;
+*,
+*::after, 
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 30vh;
+}
+.order-container{
+  align-items: baseline;
+}
+
+.main{
+  display: flex;
+  flex-grow: 1;
+  background-color: rgb(242, 191, 186);
+  align-items: center;
+}
+
+.general-container{
+  width: 100%;
+
+}
+.products{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 0 10vw;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex:0 0 25%;
+  align-content: center;
+  align-items: center;
+}
+
+.cards > img{
+  flex: 0 0 400px;
+  width: 400px;
+}
+.info-card{
+  font-size: 100vw;
+}
+
+footer{
+  background-color: black;
+  padding: 7rem;
+  color: white;
+}
+.menu-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-footer h1{
+  margin: 20px;
+}
+.redes{
+  text-align: center;
+}
+.redes li {
+  list-style:none ;
+  padding-bottom: 20px;
+}
+
+/*.logo {
+  display: none;
+}*/
