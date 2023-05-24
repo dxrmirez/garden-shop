@@ -36,11 +36,31 @@
         <a href="index.html"><img src="./icons/isologo.png" alt="logo" class="logo-header" /></a>
         <a href="login.html"><img src="./icons/user.svg" alt="user"></a>
 
-        <section class="general-container search-prod">
-            <div class="search-container">
+    </header>
+
+    <main class="main">
+
+        <!--Cree otra seccion con clase filtros-->
+
+        <section class="filtros">
+      <div class="search-container">
                 <input type="search" class="input search-box">
                 <img src="icons/lens.svg" alt="lens" class="search-icon">
             </div>
+            <div class="order-container">
+                <p class="hint">Order:</p>
+                <select class="order-select">
+                    <option value="recent">Most recent</option>
+                    <option value="popular">Most popular</option>
+                    <option value="cost">Low cost</option>
+                </select>
+            </div>
+
+
+        </section>
+
+        <section class="general-container search-prod">
+         
             <nav class="categories">
                 <ul>
                     <li>
@@ -65,18 +85,8 @@
                     </li>
                 </ul>
             </nav>
-            <div class="order-container">
-                <p class="hint">Order:</p>
-                <select class="order-select">
-                    <option value="recent">Most recent</option>
-                    <option value="popular">Most popular</option>
-                    <option value="cost">Low cost</option>
-                </select>
-            </div>
+           
         </section>
-    </header>
-    <main class="main">
-            
     
             <section class="general-container products">
                 <div class="cards">
