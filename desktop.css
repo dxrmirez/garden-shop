@@ -51,37 +51,51 @@ body{
 .search-prod{
   display: flex;
   flex-direction: column;
-  flex: 0 1 30vw;
+  flex: 0 1 20vw;
   height: 100vh;
   align-items: center;
   justify-content: center;
   background-color: beige;
-  margin-left: ;
+  margin-left: 20px ;
+  align-self: flex-start;
 }
 .search-prod ul{
   display: flex;
   flex-direction: column-reverse;
+}
+.categories label {
+  font-size: var(--lg);
 }
 
 .products{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 0 0 60vw;
-  justify-content: flex-start;
+  flex: 1 0 70vw;
+  justify-content: baseline;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 .cards{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex:0 1 30%;
+  flex:1 1 30%;
   align-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .cards > img{
-  flex: 0 1 100px;
-  width: 100px;
+  width: 240px;
+  height: 240px;
+  border: 1px solid black;
+}
+
+.info-card{
+  display: flex;
+  flex: 0 1 30px;
+  justify-content: center;
 }
 
 .info-card .tittle  {
@@ -89,6 +103,11 @@ body{
 }
 
 .text-card .title{
+  text-align: center;
+  font-size: 1.5vw;
+}
+.text-card .subtitle{
+  text-align: center;
   font-size: var(--lg);
 }
 
@@ -114,6 +133,7 @@ footer{
 }
 
 }
+
 
 /*.logo {
   display: none;
