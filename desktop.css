@@ -1,4 +1,4 @@
-@media screen and (min-width: 940px){
+@media screen and (min-width: 1020px){
   
 
 *,
@@ -46,6 +46,14 @@ body{
   flex: 0 0 100vw;
   justify-content: center;
   align-items: center;
+}
+.hint {
+  font-weight: 700;
+  margin: 0;
+  font-size:1vw ;
+}
+.order-select{
+  font-size: 1vw ;
 }
 
 .search-prod{

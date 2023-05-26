@@ -63,6 +63,12 @@ Mobile design
   place-items: center;
 }
 
+.hint {
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
 .general-container {
   width: 320px;
   text-align: center;
